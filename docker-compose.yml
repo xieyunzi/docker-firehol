@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  firehol:
+    build: .
+    image: xieyunzi/firehol:buildpack-deps-stretch
+    privileged: true
+
+networks:
+  default:
+    external:
+      name: xz-bridge
